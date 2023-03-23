@@ -4,9 +4,11 @@ import pickle
 import pandas as pd
 import numpy as np
 from PIL import Image
-from streamlit_option_menu import option_menu
 
-Agri = pickle.load(open('C:/Agri_model.sav', 'rb'))
+
+ from streamlit_option_menu import option_menu
+
+Agri = pickle.load(open('https://github.com/Engineer-Aman/Agricultural-crop-Prediction/blob/main/Agri_model.sav', 'rb'))
 
 # horizontal Menu
 selected2 = option_menu(None, ["Home", "Crop Predictor", "About", 'Settings'], 
