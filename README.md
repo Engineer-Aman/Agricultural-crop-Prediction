@@ -33,9 +33,11 @@ Keeping these factors in my mind, I tried to build a Machine Learning model that
 2.Streamlit
 3.Python
 
+> **About Data Set**
+
 I got the data Set from Kaggle to build such a model.
 
-Columns and thre Descrption are as below :point_down: 
+Columns and there Descrption are as below :point_down: 
 
 **N:** Ratio of Nitrogen in the Soil
 
