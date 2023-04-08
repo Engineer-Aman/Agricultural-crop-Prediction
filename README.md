@@ -55,6 +55,6 @@ Columns and there Descrption are as below :point_down:
 
 >**Data Cleaning**
 
-After creating the Data Set, the first step is cleaning data. Data cleaning is the process of preparing raw data for analysis by removing bad data, organizing the raw data, and filling in the null values. But we don’t have any need to clean Data because our data set is already cleaned. There are no missing values and unwanted columns or rows.
+After getting the Data Set, the first step is cleaning data. Data cleaning is the process of preparing raw data for analysis by removing bad data, organizing the raw data, and filling in the null values. But we don’t have any need to clean Data because our data set is already cleaned. There are no missing values and unwanted columns or rows.
 
 
