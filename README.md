@@ -1,6 +1,6 @@
 # Agricultural-crop-Prediction
 
-:wave: Hi in this data science project I am going to predict the 'Crop' based on soile proerties and climate.
+:wave: Hi in this data science project I am going to predict the 'Crop' based on soil proerties and climate.
 
 In below video you can check the workflow and overview of this project.:point_down:
 
