@@ -91,6 +91,30 @@ label          0
 #lets count the crops values present in data
 df['label'].value_counts()
 
+Output:-
+rice           100
+maize          100
+jute           100
+cotton         100
+coconut        100
+papaya         100
+orange         100
+apple          100
+muskmelon      100
+watermelon     100
+grapes         100
+mango          100
+banana         100
+pomegranate    100
+lentil         100
+blackgram      100
+mungbean       100
+mothbeans      100
+pigeonpeas     100
+kidneybeans    100
+chickpea       100
+coffee         100
+
 ```
 
 ```
@@ -127,6 +151,7 @@ print("----------------------")
 print("Rainy Crops")
 print(df[(df['rainfall']>200)&(df['humidity']>30)]['label'].unique())
 
+Output:-
 
 Summer Crops
 ['pigeonpeas' 'mothbeans' 'blackgram' 'mango' 'grapes' 'orange' 'papaya']
@@ -149,6 +174,9 @@ print('crops which requires very low humidity:', df[df['humidity']<20]['label'].
 print('crops which requires very low ph:', df[df['ph']<4]['label'].unique())
 print('crops which requires very high ph:', df[df['ph']>9]['label'].unique())
 
+
+Output:-
+
 crops which requires very high ratio of Nitrogen content in soil: ['cotton']
 crops which requires very high ratio of Phosphorous content in soil: ['grapes' 'apple']
 crops which requires very high ratio of Potassium content in soil: ['grapes' 'apple']
@@ -159,4 +187,35 @@ crops which requires very low humidity: ['chickpea' 'kidneybeans']
 crops which requires very low ph: ['mothbeans']
 crops which requires very high ph: ['mothbeans']
 ```
+>**Distribution Graph**
 
+![3](https://user-images.githubusercontent.com/126685886/230737382-8af08c72-e212-4498-8c65-94a87664ccc3.png)
+
+we can see that some crops require a small amount of Nitrogen, some require average, and some require large amounts. Some crops require a small amount of Phosphorous, some require average, and some require large amounts. Some crops require a small amount of Potassium, some require average, and some require large amounts. Some crops require low Temperature, some require average, and some require high. Some crops require low Humidity in soil, some require average, and some require high. Some crops require low PH levels and some require high PH levels. Some crops require low Rain Fall, some require average, and some require high.
+
+>**Splitting Data for Model Traning and testing**
+```
+x=df.drop(['label'],axis=1)
+print(x.shape)
+y=df['label']
+print(y.shape)
+
+Output:-
+(2200, 7)
+(2200,)
+
+
+from sklearn.model_selection import train_test_split
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=1)
+```
+
+>**Model Building**
+
+```
+from sklearn.linear_model import LogisticRegression
+log_model=LogisticRegression()
+log_model.fit(x_train,y_train)
+
+pred = log_model.predict(x_test)
+
+```
