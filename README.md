@@ -1,5 +1,14 @@
 # Agricultural-crop-Prediction
 
+:wave: Hi in this data science project I am going to predict the 'Crop' based on soile proerties and climate.
+please check a below:point_down: video for review.
+
+
+
+
+https://user-images.githubusercontent.com/126685886/230735981-8be7621f-7053-4534-ab8b-64f0d7a8b6f5.mp4
+
+
 import streamlit as st
 import pickle
 
