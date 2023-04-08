@@ -18,7 +18,7 @@ if (selected2 == "Home"):
     st.markdown("<h1 style='text-align: center; color:black;'>Agricultural Crop Prediction</h1>", unsafe_allow_html=True)
 
     #st.title('Agricultural Crop Prediction')
-    image = Image.open('F.jpg')
+    image = Image.open('f.jpg')
     st.image(image, caption='',width=715)
     st.write('''
     Earlier, crop cultivation was undertaken on the basis of farmers’ hands-on expertise. However, climate change has begun to affect crop yields badly. Consequently, farmers are unable to choose the right crop/s based on soil and environmental factors, and the process of manually predicting the choice of the right crop/s of land has, more often than not, resulted in failure. Accurate crop prediction results in increased crop production. This is where machine learning playing a crucial role in the area of crop prediction. Crop prediction depends on the soil, geographic and climatic attributes. Selecting appropriate attributes for the right crop/s is an intrinsic part of the prediction undertaken by feature selection techniques. In this work, a comparative study of various wrapper feature selection methods are carried out for crop prediction using classification techniques that suggest the suitable crop/s for land. The experimental results show the Recursive Feature Elimination technique with the Adaptive Bagging classifier outperforms the others.
