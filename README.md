@@ -85,4 +85,78 @@ rainfall       0
 label          0
 
 ```
+>**Performed Some EDA**
+
+```
+#lets count the crops values present in data
+df['label'].value_counts()
+
+```
+
+```
+@interact
+def summary(conditions=['Nitrogen','Phosphorus','Potassium','temperature',
+                        'humidity','ph','rainfall']):
+    print(df.groupby(['label']).agg({conditions : ['mean','max','min']}))
+    
+ 
+```
+![1](https://user-images.githubusercontent.com/126685886/230737182-8892b9e5-3fe0-4224-9c7e-146a19c0c76e.png)
+
+```
+@interact
+def summary(conditions=['rice', 'maize', 'chickpea', 'kidneybeans', 'pigeonpeas',
+                        'mothbeans', 'mungbean', 'blackgram', 'lentil', 'pomegranate',
+                        'banana', 'mango', 'grapes', 'watermelon', 'muskmelon', 'apple',
+                        'orange', 'papaya', 'coconut', 'cotton', 'jute', 'coffee']):
+    a=df[df['label']==conditions]
+    data={'min':a.min(),'max':a.max(),'mean':a.mean()}
+    d = pd.DataFrame(data)
+    print(d)
+    
+```
+![2](https://user-images.githubusercontent.com/126685886/230737230-b5c1ca5c-2b57-40c2-8051-5a6b98509663.png)
+
+```
+print("Summer Crops")
+print(df[(df['temperature']>30)&(df['humidity']>50)]['label'].unique())
+print("----------------------")
+print("winter Crops")
+print(df[(df['temperature']<20)&(df['humidity']>30)]['label'].unique())
+print("----------------------")
+print("Rainy Crops")
+print(df[(df['rainfall']>200)&(df['humidity']>30)]['label'].unique())
+
+
+Summer Crops
+['pigeonpeas' 'mothbeans' 'blackgram' 'mango' 'grapes' 'orange' 'papaya']
+----------------------
+winter Crops
+['maize' 'pigeonpeas' 'lentil' 'pomegranate' 'grapes' 'orange']
+----------------------
+Rainy Crops
+['rice' 'papaya' 'coconut']
+```
+
+```
+print('crops which requires very high ratio of Nitrogen content in soil:', df[df['Nitrogen']>120]['label'].unique())
+print('crops which requires very high ratio of Phosphorous content in soil:', df[df['Phosphorus']>100]['label'].unique())
+print('crops which requires very high ratio of Potassium content in soil:', df[df['Potassium']>200]['label'].unique())
+print('crops which requires very high rainfall:', df[df['rainfall']>200]['label'].unique())
+print('crops which requires very low temperature:', df[df['temperature']<10]['label'].unique())
+print('crops which requires very high temperature:', df[df['temperature']>40]['label'].unique())
+print('crops which requires very low humidity:', df[df['humidity']<20]['label'].unique())
+print('crops which requires very low ph:', df[df['ph']<4]['label'].unique())
+print('crops which requires very high ph:', df[df['ph']>9]['label'].unique())
+
+crops which requires very high ratio of Nitrogen content in soil: ['cotton']
+crops which requires very high ratio of Phosphorous content in soil: ['grapes' 'apple']
+crops which requires very high ratio of Potassium content in soil: ['grapes' 'apple']
+crops which requires very high rainfall: ['rice' 'papaya' 'coconut']
+crops which requires very low temperature: ['grapes']
+crops which requires very high temperature: ['grapes' 'papaya']
+crops which requires very low humidity: ['chickpea' 'kidneybeans']
+crops which requires very low ph: ['mothbeans']
+crops which requires very high ph: ['mothbeans']
+```
 
