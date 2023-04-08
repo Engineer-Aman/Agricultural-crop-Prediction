@@ -40,13 +40,17 @@ I got the data Set from Kaggle to build such a model.
 ```
 df.head()
 
-Nitrogen	Phosphorus	Potassium	temperature	humidity	ph	rainfall	label
+Nitrogen	Phosphorus	Potassium	temperature	humidity	ph	        rainfall	label
 	90	42                    43	20.879744	82.002744	6.502985	202.935536	rice
 	85	58	              41	21.770462	80.319644	7.038096	226.655537	rice
 	60	55	              44	23.004459	82.320763	7.840207	263.964248	rice
 	74	35	              40	26.491096	80.158363	6.980401	242.864034	rice
 	78	42	              42	20.130175	81.604873	7.628473	262.717340	rice
 
+
+df.shape
+
+(2200, 8)
 ```
 Columns and there Descrption are as below :point_down: 
 
