@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image
 from streamlit_option_menu import option_menu
 
-Agri = pickle.load(open('C:/Agri_model.sav', 'rb'))
+Agri = pickle.load(open('Agri_model.sav', 'rb'))
 
 # horizontal Menu
 selected2 = option_menu(None, ["Home", "Crop Predictor", "About", 'Settings'], 
