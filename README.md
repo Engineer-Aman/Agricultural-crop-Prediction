@@ -19,11 +19,16 @@ Then I started thinking about the reasons why our agronomist could not reach max
 
 Many factors affect the productivity of crops but two factors that affect crops productivity directly are,
 
-### 1.Soil Conditions
-### 2.Climate Conditions
+1.Soil Conditions
+2.Climate Conditions
 
 Keeping these factors in my mind, I tried to build a Machine Learning model that will take different Climate and Soil conditions and predict a crop that can make maximum growth in these certain conditions and I did. By using this model, agronomists will be able to know which crop is more productive.
 
 
 >### Let me tell you what I did and what I learned in this project…
+
+**Tools Used**
+1.Jupyter notebook
+2.Streamlit
+3.Python
 
