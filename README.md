@@ -1,12 +1,14 @@
 # Agricultural-crop-Prediction
 
 :wave: Hi in this data science project I am going to predict the 'Crop' based on soile proerties and climate.
-please check a below:point_down: video for review.
 
-
-
-
+In below video you can check the workflow and overview of this project.:point_down:
 https://user-images.githubusercontent.com/126685886/230735981-8be7621f-7053-4534-ab8b-64f0d7a8b6f5.mp4
+
+To access this webapp use below link:point_down:
+
+https://engineer-aman-agricultural-crop-prediction-agri-model-ejr8j6.streamlit.app/
+
 
 
 import streamlit as st
