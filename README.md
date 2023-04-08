@@ -33,3 +33,20 @@ Keeping these factors in my mind, I tried to build a Machine Learning model that
 2.Streamlit
 3.Python
 
+I got the data Set from Kaggle to build such a model.
+
+Columns and thre Descrption are as below :point_down: 
+
+**N:** Ratio of Nitrogen in the Soil
+
+**P:** Ratio of Phosphorous in the Soil
+
+**K:** Ratio of Potassium in the Soil
+
+**Temperature:** Temperature in Celsius
+
+**Humidity:** Relative Humidity in %
+
+**PH:** Ph value for the Soil
+
+**Rain Fall:** Rain Fall in 1mm
