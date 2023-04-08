@@ -27,7 +27,8 @@ Keeping these factors in my mind, I tried to build a Machine Learning model that
 
 >### Let me tell you what I did and what I learned in this project…
 
-**Tools Used**
+**Tools Used:-**
+
 1.Jupyter notebook
 2.Streamlit
 3.Python
