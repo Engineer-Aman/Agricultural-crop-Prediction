@@ -37,6 +37,17 @@ Keeping these factors in my mind, I tried to build a Machine Learning model that
 
 I got the data Set from Kaggle to build such a model.
 
+```
+df.head()
+
+Nitrogen	Phosphorus	Potassium	temperature	humidity	ph	rainfall	label
+0	90	42	43	20.879744	82.002744	6.502985	202.935536	rice
+1	85	58	41	21.770462	80.319644	7.038096	226.655537	rice
+2	60	55	44	23.004459	82.320763	7.840207	263.964248	rice
+3	74	35	40	26.491096	80.158363	6.980401	242.864034	rice
+4	78	42	42	20.130175	81.604873	7.628473	262.717340	rice
+
+```
 Columns and there Descrption are as below :point_down: 
 
 **N:** Ratio of Nitrogen in the Soil
@@ -59,6 +70,15 @@ After getting the Data Set, the first step is cleaning data. Data cleaning is th
 
 ```
 df.isnull().sum()
+
+Nitrogen       0
+Phosphorus     0
+Potassium      0
+temperature    0
+humidity       0
+ph             0
+rainfall       0
+label          0
 
 ```
 
